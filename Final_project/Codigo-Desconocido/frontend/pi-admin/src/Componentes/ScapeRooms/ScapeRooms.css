@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Bad Signal' !important;
+    src: url(../Assets/fonts/Bad\ Signal.otf) format('truetype') !important;
+}
+
+@font-face {
+    font-family: 'Bahnschrift' !important;
+    src: url(../Assets/fonts/BAHNSCHRIFT.TTF) format('truetype') !important;
+}
+
+/* ------------------------------------ RESET ------------------------------------ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: black;
+    --secondary-color: white;
+    --terciary-color: #EC7063;
+}
+
+body {
+    font-family: Montserrat, "sans-serif";
+}
+
+.container {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* ------------------------------ CABECERA ------------------------------------ */
+
+#cabecera {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 100000;
+    justify-content: space-between;
+    transition: 0.6s;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+/* ------------------------------------ MENÚ ------------------------------------ */
+
+.main-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 300;
+    margin-top: 4.5vh;
+}
+
+.list-nav {
+    position: relative;
+    display: flex;
+    margin-right: 2vw;
+}
+
+.list-nav li:not(:last-child) {
+    margin-right: 8vw;
+}
+
+.list-nav li {
+    position: relative;
+    text-transform: uppercase;
+    font-size: clamp(0.7rem, 0.557rem + 0.381vw, 0.9rem);
+    font-weight: 600;
+    list-style: none;
+    font-family: Bahnschrift, "sans serif";
+    margin-right: 4vw;
+}
+
+.list-nav li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.list-nav li a:hover {
+    color: white;
+}
+
+.list-nav li a:hover::after {
+    width: 100%;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 0 6px;
+}
+
+.list-nav li a.active {
+    color: #EC7063;
+}
+
+.list-nav li a.active::after {
+    width: 100%;
+}
+
+/* ------------------------------------ HERO ------------------------------------ */
+
+#hero-scaperooms {
+    position: relative !important;
+    width: 100vw !important;
+    height: 70vh !important;
+
+    background-image: url(../Assets/imagesScapeRooms/hero-scaperooms.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    
+    margin-bottom: 10vh !important;
+}
+
+/*----------------- TEXTO 1 -----------------*/
+
+.primera-linea-hero-scaperooms {
+    position: absolute !important;
+    width: 70% !important;
+    top: 36% !important;
+    left: 67% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    font-size: clamp(3.5rem, 1.357rem + 5.714vw, 6.5rem) !important;
+    font-weight: 400 !important;
+    font-family: 'Bad Signal' !important;
+    letter-spacing: .2em !important;
+    animation: fadeIn 2s ease-in-out forwards !important;
+}
+
+/*----------------- TEXTO 2 -----------------*/
+
+.segunda-linea-hero-scaperooms {
+    position: absolute !important;
+    width: 20% !important;
+    top: 55% !important;
+    left: 55% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    font-size: clamp(3.5rem, 1.357rem + 5.714vw, 6.5rem) !important;
+    font-weight: 400 !important;
+    font-family: 'Bad Signal' !important;
+    letter-spacing: .2em !important;
+    animation: fadeIn 2s ease-in-out forwards !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0 !important;
+    }
+
+    100% {
+        opacity: 1 !important;
+    }
+}
+
+/* ------------------------------------ SECTION - 1 ------------------------------------ */
+
+.section-1-scaperooms {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    width: 100vw !important;
+    height: 30vh !important;
+}
+
+.rectangulo-1-filtros-scaperooms {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-between !important;
+    align-content: center !important;
+    align-items: center !important;
+    width: 80vw !important;
+    height: fit-content !important;
+}
+
+#como {
+    font-size: clamp(1.5rem, 1.143rem + 0.952vw, 2rem) !important;
+    color: black !important;
+    font-weight: 600 !important;
+    font-family: Bahnschrift, "sans serif" !important;
+}
+
+.filtros-scaperooms {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    align-content: center !important;
+    width: 80vw !important;
+    height: 25vh !important;
+}
+
+.rectangulos {
+    background-color: #e7edef !important;
+    width: 10em !important;
+    height: 3em !important;
+    text-align: center !important;
+    line-height: 3em !important;
+    cursor: pointer !important;
+
+    font-size: 1em;
+}
+
+.ciudades select,
+.nivel-dificultad select,
+.lista-tematicas select {
+    width: 8.4vw !important;
+    height: 3em !important;
+}
+
+.buscar {
+    background-color: #e7edef !important;
+    width: 3em !important;
+    height: 3em !important;
+    text-align: center !important;
+    line-height: 3em !important;
+    cursor: pointer !important;
+}
+
+/* ------------------------------------ SECTION - 2 ------------------------------------ */
+
+.section-2-scaperooms {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    width: 100vw !important;
+    height: fit-content !important;
+    margin-top: 5vh !important;
+    margin-bottom: 5vh !important;
+}
+
+.lista-scaperooms {
+    display: flex !important;
+    flex-flow: row wrap !important;
+   
+    align-content: center !important;
+    align-items: center !important;
+    width: 80vw !important;
+    height: fit-content !important;
+}
+
+.caja-scaperoom {
+    display: flex !important;
+    flex-flow: column wrap !important;
+    justify-content: center !important;
+    margin: 20px;
+    align-items: center !important;
+    align-content: center !important;
+    width: 28em !important;
+    height: 60vh !important;
+    background-color: #e7edef !important;
+    margin-bottom: 5vh !important;
+    border-radius: 5px !important;
+}
+.imagen-scaperoom img{
+ 
+ 
+
+}
+.imagen-scaperoom {
+    width: 100% !important;
+    height: 60% !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#imagen-scaperoom-1 {
+    background-image: url(../Assets/imagesScapeRooms/cartel-scaperoom-1.jpg) !important;
+}
+
+#imagen-scaperoom-2 {
+    background-image: url(../Assets/imagesScapeRooms/cartel-scaperoom-2.jpg) !important;
+}
+
+#imagen-scaperoom-3 {
+    background-image: url(../Assets/imagesScapeRooms/cartel-scaperoom-3.png) !important;
+}
+
+#imagen-scaperoom-4 {
+    background-image: url(../Assets/imagesScapeRooms/cartel-scaperoom-4.jpg) !important;
+}
+
+#imagen-scaperoom-5 {
+    background-image: url(../Assets/imagesScapeRooms/cartel-scaperoom-5.jpg) !important;
+}
+
+.info-scaperoom {
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: space-around !important;
+    width: 90% !important;
+    height: 40% !important;
+}
+
+.nombre-scaperoom p {
+    font-size: clamp(1.23rem, 1.037rem + 0.514vw, 1.5rem) !important;
+    color: black !important;
+    font-weight: 600 !important;
+    font-family: Bahnschrift, "sans serif" !important;
+}
+
+.caracteristicas-scaperoom {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    align-content: center !important;
+}
+
+.caracteristicas-scaperoom p {
+    width: 8em !important;
+    height: 2em !important;
+    text-align: center !important;
+    line-height: 2em !important;
+    border-radius: 8px !important;
+    background-color: #d3d0d0 !important;
+    font-size: clamp(0.85rem, 0.779rem + 0.19vw, 0.95rem) !important;
+    font-family: Montserrat, "sans-serif" !important;
+}
+
+.descripcion-scaperoom p {
+    line-height: 1.4em !important;
+    font-size: clamp(0.76rem, 0.617rem + 0.381vw, 0.96rem) !important;
+}
+
+.precio-y-reserva {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+}
+
+.reserva-ahora {
+    font-size: clamp(0.76rem, 0.617rem + 0.381vw, 0.96rem) !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    color: var(--main-color) !important;
+
+    border: none;
+    background-color: transparent;
+    transition: color 2s !important;
+}
+
+#input-mensajes {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.reserva-ahora:hover {
+    /* transform: scale(1.02); */
+    color: darken(var(--main-color), 10%);
+    font-weight: 700 !important;
+}
+
+
+.precio-y-reserva a {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 850px) {
+    .segunda-linea-hero-scaperooms {
+        left: 37% !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .segunda-linea-hero-scaperooms {
+        left: 32% !important;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .filtros-scaperooms {
+        flex-flow: column nowrap !important;
+    }
+
+    #como {
+        margin: 0 auto !important;
+        margin-bottom: 2em !important;
+    }
+
+    .section-1-scaperooms {
+        height: 35vh !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .primera-linea-hero-scaperooms {
+        left: 60% !important;
+    }
+
+    .segunda-linea-hero-scaperooms {
+        left: 25% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.ciudades,
+.nivel-dificultad,
+.lista-tematicas {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.ciudades.open,
+.nivel-dificultad.open,
+.lista-tematicas.open {
+    max-height: 200px; /* Ajusta este valor según la altura del contenido */
+}
+
+.ciudades select,
+.nivel-dificultad select,
+.lista-tematicas select {
+    width: 100%;
+    height: 3em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-family: Montserrat, "sans-serif";
+    color: var(--main-color);
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.ciudades select::after,
+.nivel-dificultad select::after,
+.lista-tematicas select::after {
+    content: '▼';
+    font-size: 0.8em;
+    color: var(--main-color);
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.ciudades select:hover,
+.nivel-dificultad select:hover,
+.lista-tematicas select:hover {
+    background-color: #e0e0e0;
+}
+
+.ciudades select:focus,
+.nivel-dificultad select:focus,
+.lista-tematicas select:focus {
+    border-color: var(--terciary-color);
+    box-shadow: 0 0 5px var(--terciary-color);
+}

@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  db:
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:      
+      - ./db_data:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    restart: unless-stopped
+    ports:
+      - 8082:80
+    volumes:
+      - ./db/data:/var/lib/mysql
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped #reiniciar a menos que la apaguemos
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+volumes:
+  db_data:

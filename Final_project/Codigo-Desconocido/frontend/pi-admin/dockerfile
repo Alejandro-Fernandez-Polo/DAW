@@ -1,0 +1,29 @@
+# Usa una imagen base que incluya Node.js
+FROM node:14-alpine
+
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copia el archivo package.json y package-lock.json al directorio de trabajo
+COPY package*.json ./
+
+# Elimina la carpeta node_modules si existe
+# RUN rm -rf node_modules
+
+# Instala las dependencias del proyecto
+RUN npm install
+
+# Instala las dependencias adicionales
+RUN npm install @react-oauth/google jwt-decode animejs
+
+# Copia el resto de los archivos de la aplicación al directorio de trabajo
+COPY . .
+
+# Compila la aplicación de React para producción
+RUN npm run build
+
+# Expone el puerto 3000 para acceder a la aplicación
+EXPOSE 3000
+
+# Define el comando para iniciar la aplicación cuando se ejecute el contenedor
+CMD ["npm", "start"]

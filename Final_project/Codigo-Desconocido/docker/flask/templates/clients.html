@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Clients{% endblock %}
+{% block content %}
+<h1>Clients</h1>
+<a href="/clients/new" class="btn btn-primary">Add New Client</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client._id }}</td>
+            <td>{{ client.name }}</td>
+            <td>{{ client.role }}</td>
+            <td>{{ client.description }}</td>
+            <td>
+                <a href="/clients/{{ client._id }}/edit" class="btn btn-secondary">Edit</a>
+                <form action="/clients/{{ client._id }}/delete" method="post" style="display:inline-block;">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
