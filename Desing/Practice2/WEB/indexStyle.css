@@ -1,0 +1,218 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+    font-family: Poppins, sans-serif;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --titleGreen: #618064;
+    --titleGrey: #666666;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(Fotos/principal.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 380px;
+    margin: 100px 0 0 12%;
+    background: rgba(255, 255, 255, .44);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+}
+
+.heroContainer .name {
+    color: black;
+    font-size: 4.7vw;
+    text-align: center;
+}
+
+.heroContainer .buy {
+    background: #D39D3D;
+    width: 70%;
+    margin-top: 40px;
+    text-align: center;
+    max-width: 200px;
+    min-height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.heroContainer .buy a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    text-transform: uppercase;
+    /* ponemos el texto en mayuscula*/
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
+/******************************* SECTIONS **********************/
+
+.imgSection {
+    height: 300px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    display: flex;
+}
+
+#section1 .imgSection {
+    background-image: url(Fotos/Section1-Home.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#section1 .titleSection {
+    margin-bottom: 20px;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 .imgSection {
+    background-image: url(Fotos/Section2-Home.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+/******************************* SECTION 3 **********************/
+
+#section3 .titleSection {
+    text-align: center;
+}
+
+.employs {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.employ {
+    min-width: 250px;
+    flex-basis: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.nameEmploy {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.3em;
+    width: 200px;
+}
+
+.chargeEmploy {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.imgEmploy {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+
+.employ1 .imgEmploy {
+    background-image: url(Fotos/employ1.jpg);
+}
+
+.employ2 .imgEmploy {
+    background-image: url(Fotos/employ2.jpg);
+}
+
+.employ3 .imgEmploy {
+    background-image: url(Fotos/employ3.jpg);
+}
+
+.employ4 .imgEmploy {
+    background-image: url(Fotos/employ4.jpg);
+}
+
+.employ5 .imgEmploy {
+    background-image: url(Fotos/employ5.jpg);
+}
+
+.employ6 .imgEmploy {
+    background-image: url(Fotos/employ6.jpg);
+}
+
+.employ7 .imgEmploy {
+    background-image: url(Fotos/employ7.jpg);
+}
+
+.employ8 .imgEmploy {
+    background-image: url(Fotos/employ8.jpg);
+}
+
+.imgTeam {
+    width: 100%;
+    height: 40vw;
+    background-image: url(Fotos/Team.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************* SECTION 4 **********************/
+
+#section4 .imgSection {
+    height: 200px;
+    background-image: url(Fotos/employ1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+@media screen and (max-width: 500px){
+    .heroContainer .name {
+        font-size: 1.75em;
+    }
+}

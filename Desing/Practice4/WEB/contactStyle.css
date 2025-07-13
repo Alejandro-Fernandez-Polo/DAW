@@ -1,0 +1,371 @@
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --red: #a32610;
+    --orange: #F2B279;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    aspect-ratio: 8/3;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(Fotos/heroContact.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 100%;
+    min-width: 180px;
+    height: 180px;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.heroContainer .name {
+    font-family: Noto Sans, sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 4.7vw;
+    text-align: center;
+}
+
+/******************************* SECTIONS **********************/
+
+.section {
+    padding: 70px;
+}
+
+.titleSection {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: clamp(1.875rem, 1.2148rem + 2.1127vw, 3.75rem);
+    height: min-content;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#section1 .titleSection {
+    margin-bottom: 80px;
+    border-left: 3px solid var(--red);
+    padding: 10px 0 20px 20px;
+    width: 100%;
+}
+
+
+.form {
+    width: 45%;
+    min-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form input {
+    width: 45%;
+    height: 40px;
+    min-width: 170px;
+    margin-bottom: 25px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    margin-bottom: 25px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: black;
+    font-family: Source Serif 4, sans-serif;
+    font-size: 1.4em;
+    padding-left: 10px;
+}
+
+.form textarea::placeholder {
+    padding-top: 7px;
+    font-family: Source Serif 4, sans-serif !important;
+}
+
+.form .formButtom {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 35%;
+    min-width: 160px;
+    margin-left: auto;
+    background-color: var(--orange);
+    font-family: Source Serif 4, sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-bottom: 0px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+.info {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-width: 350px;
+}
+
+.divInfo {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.info .imgInfo {
+    margin-right: 20px;
+    min-height: 45px;
+    min-width: 45px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scheduleInfo {
+    margin-top: 30px;
+}
+
+.scheduleInfo .imgInfo {
+    background-image: url(Fotos/schedule.png);
+}
+
+.phoneInfo .imgInfo {
+    background-image: url(Fotos/telephone.png);
+}
+
+.whatsInfo .imgInfo {
+    background-image: url(Fotos/whastapp.png);
+}
+
+.emailInfo .imgInfo {
+    background-image: url(Fotos/mail.png);
+}
+
+.info .text {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="tel:"] {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.info p {
+    margin: 0;
+    width: 100%;
+}
+
+.info .title {
+    font-weight: 600;
+}
+
+.location {
+    width: 45%;
+    min-width: 300px;
+    margin-top: 50px;
+}
+
+.loctInfo .imgInfo {
+    background-image: url(Fotos/location.png);
+    margin-right: 20px;
+    min-height: 55px;
+    min-width: 45px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.loctInfo .title {
+    font-weight: 600;
+}
+
+.loctInfo p {
+    margin: 0;
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-100%);
+    }
+
+    80% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.wrapper {
+    margin-top: 160px;
+    width: 45%;
+    aspect-ratio: 1/1;
+}
+
+.slider {
+    position: relative;
+}
+
+.slides {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+}
+
+.slide {
+    width: 100%;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+    animation-play-state: paused;
+}
+
+.slide img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    vertical-align: top;
+}
+
+.caption {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 8vw;
+    position: absolute;
+    bottom: 8vw;
+    right: 4vw;
+}
+
+.slide:target {
+    animation-name: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+@media screen and (max-width: 900px) {
+    .form input {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .location {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .heroContainer {
+        background-position: center center;
+    }
+
+    .wrapper {
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .heroContainer .name {
+        font-size: 1.75em;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+}

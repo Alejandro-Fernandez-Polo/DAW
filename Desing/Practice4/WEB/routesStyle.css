@@ -1,0 +1,444 @@
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --red: #a32610;
+    --orange: #F2B279;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    aspect-ratio: 8/3;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(Fotos/heroRoutes.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 100%;
+    min-width: 180px;
+    height: 180px;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.heroContainer .name {
+    font-family: Noto Sans, sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 4.7vw;
+    text-align: center;
+}
+
+
+/******************************* SECTIONS **********************/
+
+.section {
+    padding: 70px;
+}
+
+.titleSection {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: clamp(1.875rem, 1.2148rem + 2.1127vw, 3.75rem);
+    height: min-content;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#section1 .titleSection {
+    margin-bottom: 80px;
+    border-left: 3px solid var(--red);
+    padding: 10px 0 20px 20px;
+    width: 100%;
+}
+
+#section1 .sect{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#section1 .subtitleSection {
+    font-size: clamp(1.25rem, 0.9199rem + 1.0563vw, 2.1875rem);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#section1 .contentSection {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px 0;
+}
+
+#section1 .infoSectionEra {
+    width: 80%;
+    height: min-content;
+    margin-right: 20px;
+}
+
+#section1 .imgSection {
+    flex: 2;
+    aspect-ratio: 3/2;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 5vw;
+    min-width: 300px;
+}
+
+#section1 #era1Img {
+    background-image: url(Fotos/stage1.jpg);
+}
+
+#section1 #era2Img {
+    background-image: url(Fotos/stage2.jpg);
+}
+
+#section1 #era3Img {
+    background-image: url(Fotos/stage3.jpg);
+}
+
+#section1 #era4Img {
+    background-image: url(Fotos/stage4.jpg);
+}
+
+#section1 #era5Img {
+    background-image: url(Fotos/stage5.jpg);
+}
+
+#section1 #era6Img {
+    background-image: url(Fotos/stage6.jpg);
+}
+
+#section1 #era7Img {
+    background-image: url(Fotos/stage7.jpg);
+}
+
+#section1 #era8Img {
+    background-image: url(Fotos/stage8.jpg);
+}
+
+#section1 #era9Img {
+    background-image: url(Fotos/stage9.jpg);
+}
+
+#section1 #era10Img {
+    background-image: url(Fotos/stage10.jpg);
+}
+
+
+#section1 #era11Img {
+    background-image: url(Fotos/stage11.jpg);
+}
+
+
+#section1 .textSection {
+    flex: 3;
+    order: 1;
+}
+
+#section1 .timeLine {
+    width: 10%;
+    min-width: 120px;
+    height: 470px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#section1 .timeLineHorizontal {
+    display: none;
+}
+
+#section1 .line {
+    height: 100%;
+    width: 4px;
+    background-color: black;
+    margin-right: -90px;
+}
+
+
+#section1 .stages {
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-left: -16px;
+}
+
+#section1 .stage {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: min-content;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+#section1 .era {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hideEra {
+    display: none;
+}
+
+.showEra {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.selectedEra {
+    background-color: var(--red) !important;
+}
+
+#section1 #map1 {
+    margin-top: 50px;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#section2 .titleSection {
+    margin-bottom: 80px;
+    border-left: 3px solid var(--red);
+    padding: 10px 0 20px 20px;
+    width: 100%;
+}
+
+#section2 .subtitleSection {
+    font-size: clamp(1.25rem, 0.9199rem + 1.0563vw, 2.1875rem);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#section2 .contentSection {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px 0;
+}
+
+#section2 .infoSectionEra {
+    width: 80%;
+    height: min-content;
+    margin-right: 20px;
+}
+
+#section2 .timeLineHorizontal {
+    display: none;
+}
+
+#section2 .imgSection {
+    flex: 2;
+    aspect-ratio: 3/2;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 5vw;
+    min-width: 300px;
+}
+
+#section2 #era1Img {
+    background-image: url(Fotos/day1.jpg);
+}
+
+#section2 #era2Img {
+    background-image: url(Fotos/day2.jpg);
+}
+
+#section2 #era3Img {
+    background-image: url(Fotos/day3.jpg);
+}
+
+#section2 #era4Img {
+    background-image: url(Fotos/day4.jpg);
+}
+
+#section2 #era5Img {
+    background-image: url(Fotos/day5.jpg);
+}
+
+#section2 #era6Img {
+    background-image: url(Fotos/day6.jpg);
+}
+
+#section2 #era7Img {
+    background-image: url(Fotos/day7.jpg);
+}
+
+#section2 #era8Img {
+    background-image: url(Fotos/day8.jpg);
+}
+
+#section2 .textSection {
+    flex: 3;
+}
+
+#section2 .timeLine {
+    width: 10%;
+    min-width: 120px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#section2 .line {
+    height: 100%;
+    width: 4px;
+    background-color: black;
+    margin-right: -90px;
+}
+
+
+#section2 .stages {
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-left: -16px;
+}
+
+#section2 .stage {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: min-content;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+#section2 .era {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hideEra {
+    display: none;
+}
+
+.showEra {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.selectedEra {
+    background-color: var(--red) !important;
+}
+
+#section2 #map2 {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    #section1 .contentSection {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    #section1 .imgSection {
+        width: 70%;
+        order: 2;
+    }
+
+    #section1 .textSection {
+        order: 1;
+    }
+
+    #section2 .contentSection {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    #section2 .imgSection {
+        width: 70%;
+        order: 2;
+        margin: 0;
+    }
+
+    #section2 .textSection {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section {
+        padding: 20px;
+    }
+
+    #section1 .sect{
+        flex-flow: column nowrap;
+    }
+    #section1 .timeLine,
+    #section2 .timeLine  {
+        display: none;
+    }
+
+    #section1 .timeLineHorizontal,
+    #section2 .timeLineHorizontal {
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        margin: 30px 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    #section1 .era,
+    #section2 .era {
+        width: 20px;
+        height: 20px;
+        margin-top: -8px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    
+    #section1 .dates,
+    #section2 .dates {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,311 @@
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --background: #eaeae1;
+    --brownTitle: #643926;
+    --yellow: #eed65f;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(img/heroIndex.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 480px;
+    margin: 100px 0 0 12%;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.heroContainer .name {
+    color: var(--brownTitle);
+    font-size: clamp(3.125rem, 2.5rem + 2.0833vw, 5rem);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heroContainer .buy {
+    background: var(--background);
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 300px;
+    height: 70px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.heroContainer .buy .ctaBorder{
+    background: var(--yellow);
+    height: 10px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.heroContainer .buy a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    color: black;
+    font-size: 50px;
+    font-family: 'Quattrocento', sans-serif;
+    margin-top: 5px;
+}
+
+/******************************* SECTIONS **********************/
+
+.vino1 {
+    position: absolute;
+    z-index: 2;
+    background-image: url(img/vinoderramado1.png);
+    background-repeat: no-repeat;
+    right: 0;
+    aspect-ratio: 349/2453;
+    height: 2000px;
+    background-size: contain;
+    background-position: center center;
+    margin-top: 200px;
+}
+
+.vino2 {
+    position: absolute;
+    z-index: 2;
+    background-image: url(img/vinoderramado3.png);
+    background-repeat: no-repeat;
+    aspect-ratio: 143/453;
+    height: 1800px;
+    background-size: contain;
+    background-position: center center;
+    margin-top: 500px;
+}
+
+.sections .titleSection {
+    margin-top: 40px;
+}
+
+#section1, #section2 , #section3{
+    margin-right: 150px;
+    margin: 0 100px;
+    padding: 180px 0;
+}
+
+
+
+/******************************* SECTION 1 **********************/
+
+#section1  {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section1  *{
+    z-index: 3;
+}
+
+
+#section1 .infoSection {
+    height: 100%;
+    padding-left: 70px;
+    width: 100%;
+    border-left: 10px solid var(--yellow);
+}
+
+#section1 .imgSection {
+    background-image: url(img/Section1-Home.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    aspect-ratio: 2/1;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#section1 .textSection {
+    width: 90%;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2  {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section2  *{
+    z-index: 3;
+}
+
+#section2 .infoSection {
+    height: 100%;
+    padding-right: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    border-right: 10px solid var(--yellow);
+}
+
+#section2 .imgSection {
+    background-image: url(img/Section2-Home.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 2/1;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#section2 .textSection {
+    margin-left: 8%;
+    width: 90%;
+}
+
+/******************************* SECTION 3 **********************/
+
+#section3  {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section3 .infoSection {
+    width: 100%;
+}
+
+#section3 .imgSection {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 3/5;
+    width: 20%;
+    margin-top: 180px;
+    min-width: 200px;
+}
+
+#section3 #chef {
+    background-image: url(img/chef.jpg);
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-right: 100px;
+    margin-top: -750px;
+}
+
+#section3 #roomManager {
+    background-image: url(img/camarera1.jpg);
+    position: absolute;
+    z-index: 2;
+}
+
+#section3 .titleSection {
+    text-align: center;
+    width: 100%;
+}
+
+#section3 .textSection {
+    background-color: var(--yellow);
+    width: 60%;
+    padding: 30px 100px;
+    margin: auto;
+}
+
+
+@media (max-width: 1350px) {
+    .vino2 {
+        margin-left: -50px;
+        height: 1600px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .vino1 {
+        background-image: url(img/vinoderramado2.png);
+        aspect-ratio: 260/2453;
+    }
+    
+    .vino2 {
+        margin-left: -100px;
+        height: 1600px;
+    }
+
+    #section3 .textSection {
+        width: 70%;
+        padding: 30px 40px;
+    }
+
+    #section3 #chef {
+        position: relative;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    #section3 #roomManager {
+        position: relative;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+    .vino1 {
+        display: none;
+    }
+    
+    .vino2 {
+        display: none;
+    }
+
+    #section2 .infoSection {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    #section1 .infoSection {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    #section2 .textSection, #section1 .textSection {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #section1, #section2 , #section3{
+        margin-right: 0;
+        margin: 0 20px;
+        padding: 50px 0;
+    }
+}

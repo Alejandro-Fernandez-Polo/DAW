@@ -1,0 +1,315 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+    font-family: Poppins, sans-serif;
+    font-size: 1em;
+    /*obligamos a que se hagan los scrolls suaves*/
+    scroll-behavior: smooth;
+}
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --titleGreen: #618064;
+    --titleGrey: #666666;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/***************************************** GENERAL *****************************/
+
+.imgLogo {
+    background-image: url(logo/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 100px;
+}
+
+.textLogo {
+    color: white;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/************************************************ HERO **************************/
+
+.imgNav {
+    background-image: url(Fotos/nav.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+
+nav {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 80px;
+    width: 100px;
+}
+
+.imgLogo {
+    background-image: url(Logo/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 100px;
+}
+
+nav .links {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+nav .links ul {
+    list-style-type: none;
+    margin: 0;
+    /*reset css*/
+    padding: 0;
+    /*reset css*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav .links a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    text-transform: uppercase;
+    /* ponemos el texto en mayuscula*/
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
+nav .links a:hover {
+    border-bottom: 1px solid white;
+}
+
+/******************************* SECTIONS **********************/
+
+.section {
+    padding: 70px;
+}
+
+.titleSection {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2em;
+    height: min-content;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    background-color: var(--sectionGrey);
+}
+
+#section1 .titleSection {
+    color: var(--titleGreen);
+    margin-bottom: 20px;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    background-color: var(--sectionGreen);
+}
+
+#section2 .titleSection {
+    color: var(--titleGrey);
+}
+
+/******************************* SECTION 3 **********************/
+
+#section3 {
+    background-color: var(--sectionGrey);
+}
+
+#section3 .titleSection {
+    color: var(--titleGreen);
+}
+
+/******************************* SECTION 4 **********************/
+
+#section4 {
+    background-color: var(--sectionGreen);
+}
+
+#section4 .titleSection {
+    color: var(--titleGrey);
+}
+
+/******************************* FOOTER **********************/
+
+footer {
+    background-color: var(--sectionGrey);
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    /*reset css*/
+    padding: 0;
+    /*reset css*/
+}
+
+footer a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    color: black;
+}
+
+/**************** COLUMS **************/
+
+footer .colums {
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.colum {
+    min-width: 250px;
+}
+
+.colums .titleFooter {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 600;
+    height: min-content;
+    margin-bottom: 7px;
+}
+
+.separator {
+    height: 2px;
+    width: 200px;
+    background-color: var(--titleGreen);
+}
+
+.colums li {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/******** END ******/
+
+footer .end {
+    width: 100%;
+    min-height: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #3b3b3b;
+}
+
+footer .logo {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.end .titleFooter {
+    width: 150px;
+    color: white;
+}
+
+.end .links {
+    width: 70%;
+    min-width: 200px;
+    margin: auto;
+}
+
+.end .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.end .links a {
+    text-transform: uppercase;
+    color: white;
+    /* ponemos el texto en mayuscula*/
+}
+
+@media screen and (max-width: 500px){
+    .section {
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .colum {
+        width: 100%;
+    }
+
+    .end .titleFooter {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .end .links {
+        width: 100%;
+        min-width: 200px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .end .titleFooter {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    nav .links ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav .links {
+        width: 200px;
+    }
+
+    .colum {
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}

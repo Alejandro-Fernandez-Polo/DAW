@@ -1,0 +1,315 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --background: #eaeae1;
+    --brownTitle: #643926;
+    --yellow: #eed65f;
+    --bandaFuxia: #d62161;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(img/heroContact.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 380px;
+    margin: 100px 0 0 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.heroContainer .name {
+    color: white;
+    font-size: clamp(1.875rem, -0.2083rem + 6.9444vw, 8.125rem);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 5px black;
+}
+
+/******************************* SECTIONS **********************/
+
+.sections .titleSection {
+    margin-top: 10px;
+    color: brown;
+}
+
+.sections .title {
+    font-weight: 600;
+    font-size: clamp(1.4375rem, 1.0833rem + 1.1806vw, 2.5rem);
+}
+
+.sections p {
+    text-align: center;
+}
+
+.titleSection {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.imgSection {
+    width: 45%;
+    height: 530px;
+    min-width: 300px;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titleSection {
+    margin-bottom: 20px;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1,
+#section2 {
+    background-color: var(--background);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#section1 .titleSection,
+#section2 .titleSection {
+    color: var(--brownTitle);
+    width: 100%;
+    margin-top: 100px;
+}
+
+.form {
+    width: 80%;
+    min-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form input {
+    width: 45%;
+    height: 70px;
+    min-width: 170px;
+    margin-bottom: 50px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    margin-bottom: 50px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: black;
+    font-family: Quattrocento, sans-serif;
+    font-size: 1.7em;
+    padding-left: 10px;
+}
+
+.form textarea::placeholder {
+    padding-top: 7px;
+}
+
+.form .formButtom {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 35%;
+    min-width: 160px;
+    margin: auto;
+    background-color: var(--bandaFuxia);
+    font-family: Quattrocento, sans-serif;
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.info {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-width: 350px;
+    left: 0;
+}
+
+.divInfo {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/*************************** Section 3 ***************************/
+
+#section3 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    padding-bottom: 100px;
+}
+
+.imgInfo {
+    margin-right: 20px;
+    min-height: 65px;
+    min-width: 65px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.phoneInfo .imgInfo {
+    background-image: url(img/telefono.png);
+}
+
+.loctInfo .imgInfo {
+    background-image: url(img/ubicacion.png);
+}
+
+.info {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.info .text {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="tel:"] {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.info p {
+    margin: 0;
+    width: 100%;
+}
+
+.info .title {
+    font-weight: 600;
+}
+
+.location {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 50px;
+}
+
+.loctInfo .title {
+    font-weight: 600;
+}
+
+.loctInfo p {
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .form input {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .location {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .heroContainer {
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ticket .cta {
+        height: 70px;
+    }
+
+    .ticket .imgEntrada {
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .ticket .imgEntrada2 {
+        min-width: 0;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ticket {
+        width: 100%;
+    }
+}

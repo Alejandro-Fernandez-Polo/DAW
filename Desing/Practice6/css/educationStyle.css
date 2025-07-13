@@ -1,0 +1,722 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --brownTitle: #643926;
+    --yellow: #eed65f;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    aspect-ratio: 15/6;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(../img/heroEducation.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.heroContainer .ctaTitle {
+    width: 100%;
+    min-width: 180px;
+    height: 380px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(4.375rem, 1.6667rem + 9.0278vw, 12.5rem);
+    /*70 y 200*/
+    font-weight: 700;
+}
+
+.heroContainer .nameWhite {
+    color: white;
+}
+
+/******************************* SECTIONS **********************/
+
+.titleSection {
+    text-align: center;
+    width: 100%;
+}
+
+.sections .titleSection {
+    padding: 100px 0;
+    margin-bottom: 0px;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-image: url(../img/section1Education.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 5/3;
+    width: 100%;
+    z-index: 10;
+}
+
+#section1 .infoSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#section1 .titleActions {
+    width: 50%;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    color: #353535;
+    font-size: clamp(1.25rem, 0.625rem + 2.0833vw, 3.125rem);
+    /*20 y 50*/
+    font-weight: 100;
+}
+
+#section1 .textSection {
+    width: 50%;
+    padding: 50px 50px;
+    background: rgba(233, 233, 233, .62);
+    text-align: justify;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-image: url(../img/section2Education.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 5/3;
+    width: 100%;
+    margin-top: -4.5vw;
+    z-index: 0;
+}
+
+#section2 .infoSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#section2 .titleActions {
+    width: 50%;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    color: #353535;
+    font-size: clamp(1.25rem, 0.625rem + 2.0833vw, 3.125rem);
+    /*20 y 50*/
+    font-weight: 100;
+}
+
+#section2 .textSection {
+    width: 50%;
+    padding: 50px 50px;
+    background: rgba(233, 233, 233, .62);
+    text-align: justify;
+}
+
+/******************************* SECTION 3 **********************/
+
+.sectionSpace {
+    aspect-ratio: 5/3;
+    width: 90%;
+}
+
+#section3 {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-image: url(../img/section3Education.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    aspect-ratio: 5/3;
+    width: 100%;
+    margin-top: -6.7vw;
+    z-index: -10;
+}
+
+#section3 .infoSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+#section3 .titleActions {
+    width: 50%;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    color: #353535;
+    font-size: clamp(1.25rem, 0.625rem + 2.0833vw, 3.125rem);
+    /*20 y 50*/
+    font-weight: 100;
+}
+
+#section3 .textSection {
+    width: 50%;
+    padding: 50px;
+    background: rgba(233, 233, 233, .62);
+    text-align: justify;
+}
+
+.finSection {
+    margin-top: -6.7vw;
+    aspect-ratio: 45/8;
+    width: 100%;
+    background-image: url(../img/section4Education.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************* SECTION 4 **********************/
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.row .textSection {
+    padding: 20px 35px;
+    font-size: clamp(0.6875rem, 0.4375rem + 0.8333vw, 1.4375rem);
+    /*11 y 23*/
+    text-align: justify;
+}
+
+.row .titleActions {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(27, 107, 150);
+    color: white;
+    font-size: clamp(1.25rem, 1.0417rem + 0.6944vw, 1.875rem);
+    /*20 y 30*/
+}
+
+.miniSection1 {
+    width: 33.3333333%;
+    aspect-ratio: 5/3;
+    position: relative;
+}
+
+.bigContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bigContainer .row {
+    width: 66.66666666%;
+}
+
+.miniSection2 {
+    width: 50%;
+    aspect-ratio: 5/3;
+    position: relative;
+}
+
+.miniSection3 {
+    width: 100%;
+    aspect-ratio: 10/3;
+    position: relative;
+}
+
+.miniSection4 {
+    width: 33.3333333%;
+    position: relative;
+}
+
+#section4 .imgSection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#section4 #img1 {
+    background-image: url(../img/section4-1Education.jpg);
+}
+
+#section4 #img2 {
+    background-image: url(../img/section4-2Education.jpg);
+}
+
+#section4 #img3 {
+    background-image: url(../img/section4-3Education.jpg);
+}
+
+#section4 #img4 {
+    background-image: url(../img/section4-4Education.jpg);
+}
+
+#section4 .hoverSection:hover {
+    overflow: hidden;
+}
+
+#section4 .imgSection {
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+}
+
+#section4 .titleImg {
+    transition: all 0.5s linear;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 .titleImg p {
+    background: transparent;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    opacity: 0;
+    font-weight: 100;
+    font-size: clamp(1.25rem, 1.0417rem + 0.6944vw, 1.875rem);
+    /*20 y 30*/
+    color: White;
+}
+
+#section4 .hoverSection:hover .imgSection {
+    transform: scale(1.5);
+    opacity: .60;
+}
+
+#section4 .hoverSection:hover .titleImg {
+    opacity: 1;
+    z-index: 3;
+}
+
+#section4 .hoverSection:hover p {
+    transform: scale(1);
+    opacity: 1;
+}
+
+@media (max-width: 1250px) {
+
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 55%;
+        padding: 30px 50px;
+    }
+
+    #section2 .infoSection {
+        margin-left: 6%;
+    }
+
+    #section1 .infoSection,
+    #section3 .infoSection {
+        margin-right: 6%;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 55%;
+        padding-left: 50px;
+    }
+
+    .sections .titleSection {
+        padding: 70px 0;
+    }
+
+    .sections .titleSection:first-child {
+        padding: 70px 0 60px;
+    }
+
+    #section1 {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        aspect-ratio: 5/3.5;
+        width: 100%;
+    }
+
+    #section2 {
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        aspect-ratio: 5/3.5;
+        width: 100%;
+        margin-top: -4.8vw;
+    }
+
+    #section2 .infoSection {
+        margin-top: -5%;
+    }
+
+    #section3 {
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        aspect-ratio: 5/3;
+        width: 100%;
+        margin-top: -1.4vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: -1.3vw;
+        aspect-ratio: 45/8;
+        width: 100%;
+        background-image: url(../img/section4Education.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .row .titleActions {
+        padding: 20px;
+    }
+
+    .row .textSection {
+        padding: 10px 25px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 60%;
+        padding: 20px 40px;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 60%;
+        padding-bottom: 30px;
+        padding-left: 40px;
+    }
+
+    .sections .titleSection {
+        padding: 40px 0;
+    }
+
+    .sections .titleSection:first-child {
+        padding: 40px 0 30px;
+    }
+
+    #section1 {
+        aspect-ratio: 5/4;
+        width: 100%;
+    }
+
+    #section2 {
+        aspect-ratio: 5/4;
+        margin-top: -5.5vw;
+    }
+
+    #section2 .infoSection {
+        margin-top: -5%;
+    }
+
+    #section3 {
+        aspect-ratio: 5/3.5;
+        margin-top: 11vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: 23vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 65%;
+        padding: 10px 20px;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 65%;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    #section2 .titleActions {
+        width: 65%;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .sections .titleSection {
+        padding: 20px 0;
+    }
+
+    .sections .titleSection:first-child {
+        padding: 20px 0 10px;
+    }
+
+    #section1 {
+        aspect-ratio: 5/4.5;
+    }
+
+    #section2 {
+        aspect-ratio: 5/4.5;
+        margin-top: -6vw;
+    }
+
+    #section2 .infoSection {
+        margin-top: -5%;
+    }
+
+    #section3 {
+        aspect-ratio: 5/4;
+        margin-top: 20vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: 42vw;
+        aspect-ratio: 45/8;
+    }
+}
+
+@media (max-width: 520px) {
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 85%;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 85%;
+        padding-bottom: 20px;
+    }
+
+    #section2 .titleActions {
+        width: 85%;
+        padding-bottom: 20px;
+    }
+
+    #section1 {
+        aspect-ratio: 5/5.5;
+    }
+
+    #section2 {
+        aspect-ratio: 5/5;
+        margin-top: -8vw;
+    }
+
+    #section2 .infoSection {
+        margin-top: -5%;
+    }
+
+    #section3 {
+        aspect-ratio: 5/4.5;
+        margin-top: 28vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: 60vw;
+        aspect-ratio: 45/8;
+    }
+
+    .rowOne .miniSection1 {
+        width: 50%;
+    }
+
+    .rowOne .miniSection1:last-child {
+        width: 100%;
+        height: 200px;
+    }
+
+    .miniSection4 {
+        display: none;
+    }
+
+    .bigContainer .row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 95%;
+        padding: 5px 10px;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 95%;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    #section2 .titleActions {
+        width: 95%;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    .sections .titleSection {
+        padding: 20px 0;
+    }
+
+    .sections .titleSection:first-child {
+        padding: 20px 0 10px;
+    }
+
+    #section1 {
+        aspect-ratio: 5/5.5;
+    }
+
+    #section3 {
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        aspect-ratio: 5/5;
+        width: 100%;
+        margin-top: 27vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: 68vw;
+        aspect-ratio: 45/8;
+    }
+
+}
+
+@media (max-width: 325px) {
+    #section1 .textSection,
+    #section2 .textSection,
+    #section3 .textSection {
+        width: 95%;
+        padding: 5px 10px;
+    }
+
+    #section1 .titleActions,
+    #section3 .titleActions {
+        width: 95%;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #section2 .titleActions {
+        width: 95%;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    #section1 {
+        aspect-ratio: 5/7;
+    }
+
+    #section2 {
+        aspect-ratio: 5/6.5;
+        margin-top: -8vw;
+    }
+
+    #section2 .infoSection {
+        margin-top: -10%;
+    }
+
+    #section3 {
+        aspect-ratio: 5/7;
+        margin-top: 58vw;
+    }
+
+    #section3 .infoSection {
+        margin-top: 2%;
+    }
+
+    .finSection {
+        margin-top: 138vw;
+        aspect-ratio: 45/8;
+    }
+
+    .rowOne .miniSection1 {
+        width: 50%;
+    }
+
+    .rowOne .miniSection1:last-child {
+        width: 100%;
+        height: 200px;
+    }
+
+    .miniSection4 {
+        display: none;
+    }
+
+    .bigContainer .row {
+        width: 100%;
+    }
+}

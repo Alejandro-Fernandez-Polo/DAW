@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+    font-family: Quattrocento, sans-serif;
+    font-size: 1em;
+    /*obligamos a que se hagan los scrolls suaves*/
+    scroll-behavior: smooth;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --bandaFuxia: #d62161;
+    --background: #eaeae1;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/***************************************** GENERAL *****************************/
+
+.sections .textSection {
+    font-size: clamp(1.125rem, 0.875rem + 0.8333vw, 1.875rem);
+}
+
+.sections .titleSection {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: clamp(3.125rem, 2.0833rem + 3.4722vw, 6.25rem);
+    text-transform: uppercase;
+    color: var(--brownTitle);
+    margin-bottom: 70px;
+}
+
+/************************************************ HERO **************************/
+.main-logo {
+    flex: 3;
+    height: 80%;
+   
+}
+
+.logoimg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hero {
+    width: 60%;
+}
+
+
+.navbar {
+ 
+  padding: 10px;
+  flex: 10 0 40px;
+  background-color: var(--bandaFuxia);
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    padding: 5px 20px;
+}
+
+.nav-list li a:hover  {
+    
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+    color: var(--secondary-color);
+    border: 1px solid white;
+}
+
+
+
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.bar.rotate-45 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.hide {
+  opacity: 0;
+}
+
+.bar.rotate45 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+@media (max-width: 1268px) {
+
+    .hero {
+        width: 100px;
+    }
+
+  .nav-bar {
+    flex: 1;
+ 
+  }
+  .main-logo {
+    flex: 22;
+  }
+  .menu-toggle {
+    display: flex;
+    margin-right: 20px;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    text-align: center;
+    top:10vh; /* top a partir del cual saldrÃ¡ el menÃº desplegable */
+    right: 0;
+  }
+  
+  .nav-list li a{
+     width: 100% !important;
+  }
+  
+  
+  .nav-list.show {
+    display: flex;
+    z-index: 99999;
+     
+  }
+  .nav-list li {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+nav .logo {
+    margin-left: 80px;
+    height: 130px;
+    width: 220px;
+}
+
+nav .imgLogo {
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+
+nav .links {
+    width: 10%;
+    margin-left: auto;
+    padding-right: 100px;
+    background-color: var(--bandaFuxia);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+nav .links ul {
+    list-style-type: none;
+    margin: 0;
+    /*reset css*/
+    padding: 0;
+    /*reset css*/
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav .links a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    text-transform: uppercase;
+    /* ponemos el texto en mayuscula*/
+    color: white;
+    font-size: 30px;
+}
+
+nav .links a:hover {
+    border-bottom: 1px solid white;
+}
+
+.sections {
+    background-color: var(--background);
+    z-index: -5;
+}
+
+/******************************* FOOTER **********************/
+
+footer {
+    background-image: url(img/footer.jpg);
+    background-size: cover;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    /*reset css*/
+    padding: 0;
+    /*reset css*/
+}
+
+footer a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    color: black;
+}
+
+/**************** AWARDS **************/
+
+.awards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.awards * {
+    width: 30%;
+    max-width: 300px;
+    min-height: 50px;
+    height: 100%;
+    min-height: 100px;
+    margin: 0 10px;
+}
+
+.imgLogo {
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.imgLogoRepsol {
+    background-image: url(img/repsol.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.imgLogoStar {
+    background-image: url(img/star.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/**************** COLUMS **************/
+
+footer .colums {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: clamp(1.125rem, 0.875rem + 0.8333vw, 1.875rem);
+    min-height: min-content;
+    padding: 100px 100px;
+}
+
+
+footer .border {
+    box-sizing: border-box;
+    height: auto;
+    width: 1px;
+    border: 2.5px solid var(--bandaFuxia);
+}
+
+.colum {
+    height: 350px;
+    min-width: 250px;
+}
+
+.colum p {
+    margin: 0;
+    padding: 0;
+}
+
+.colums .titleFooter {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 600;
+    height: min-content;
+    margin-bottom: 7px;
+    font-size: clamp(1.125rem, 0.875rem + 0.8333vw, 1.875rem);
+}
+
+.colums {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.colums .socialNetwork li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.ownPages li:first-child, .shedule li:first-child, .colums .socialNetwork li:first-child {
+    margin-top: 20px;
+}
+
+.ownPages li{
+    margin-top: 50px;
+}
+
+.shedule li{
+    margin-top: 60px;
+}
+
+.shedule li:last-child {
+    margin-bottom: 60px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 60px;
+}
+
+#youtube {
+    background-image: url(img/youtube.png);
+}
+
+#instagram {
+    background-image: url(img/instagram.png);
+}
+
+#facebook {
+    background-image: url(img/facebook.png);
+}
+
+#twitter {
+    background-image: url(img/twitter.png);
+}
+
+/******** END ******/
+
+footer .end {
+    width: 100%;
+    min-height: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: var(--bandaFuxia);
+    min-width: 200px;
+    margin: auto;
+}
+
+.end ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.end a {
+    color: white;
+    /* ponemos el texto en mayuscula*/
+}
+
+@media (max-width: 1400px) {
+    footer .border {
+        display: none;
+    }
+
+    .colum {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .colums {
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,302 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --background: #eaeae1;
+    --brownTitle: #643926;
+    --yellow: #eed65f;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(img/heroTeam.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 380px;
+    margin: 100px 0 0 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.heroContainer .name {
+    color: white;
+    font-size: clamp(1.875rem, -0.2083rem + 6.9444vw, 8.125rem);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 5px black;
+}
+
+/******************************* SECTIONS **********************/
+
+.sections .titleSection {
+    margin-top: 10px;
+}
+
+.sections .workerName {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+#section1 {
+    margin-right: 150px;
+    margin: 0 100px;
+    padding: 130px 0;
+}
+
+#section2 {
+    margin-right: 150px;
+    margin: 0 100px;
+    padding: 20px 0;
+}
+
+#section3 {
+    margin-right: 150px;
+    margin: 0 100px;
+    padding: 180px 0;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section1 * {
+    z-index: 3;
+}
+
+#section1 .titleSection {
+    margin-bottom: 250px;
+    text-align: center;
+    width: 100%;
+}
+
+#section1 .infoSection {
+    width: 100%;
+    position: relative;
+}
+
+#section1 .workerName {
+    margin-top: -80px;
+    margin-left: 10%;
+}
+
+#section1 .imgSection {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section1 #chef1 {
+    height: 350px;
+    aspect-ratio: 115/91;
+    background-image: url(img/chef1.jpg);
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    margin-right: 25%;
+    margin-top: -120px;
+}
+
+#section1 #chef2 {
+    height: 550px;
+    aspect-ratio: 460/637;
+    background-image: url(img/chef2.jpg);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-right: 7%;
+    margin-top: 120px;
+}
+
+#section1 #chef3 {
+    height: 550px;
+    aspect-ratio: 460/637;
+    background-image: url(img/chef3.jpg);
+    position: absolute;
+    z-index: 2;
+    margin-top: 220px;
+    margin-left: 10%;
+}
+
+#section1 .textSection {
+    background-color: var(--yellow);
+    width: 700px;
+    padding: 50px 100px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section2 * {
+    z-index: 3;
+}
+
+#section2 .titleSection {
+    margin-bottom: 250px;
+    text-align: center;
+    width: 100%;
+}
+
+#section2 .infoSection {
+    width: 100%;
+    position: relative;
+}
+
+#section2 .workerName {
+    margin-top: -80px;
+    margin-left: 60%;
+}
+
+#section2 .imgSection {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section2 #roomManager1 {
+    height: 500px;
+    aspect-ratio: 1/1;
+    background-image: url(img/roomManager1.jpg);
+    position: absolute;
+    z-index: 3;
+    margin-left: 5%;
+    margin-top: -120px;
+}
+
+#section2 #roomManager2 {
+    height: 500px;
+    aspect-ratio: 750/827;
+    background-image: url(img/roomManager2.jpg);
+    position: absolute;
+    z-index: 2;
+    margin-top: 400px;
+    margin-left: 6%;
+}
+
+#section2 #roomManager3 {
+    height: 550px;
+    aspect-ratio: 3/2;
+    background-image: url(img/roomManager3.jpg);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-right: 8%;
+    margin-top: 300px;
+}
+
+#section2 .textSection {
+    background-color: var(--yellow);
+    width: 700px;
+    padding: 50px 100px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+/******************************* SECTION 3 **********************/
+
+#section3 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#section3 * {
+    z-index: 3;
+}
+
+#section3 .titleSection {
+    margin-bottom: 250px;
+    text-align: center;
+    width: 100%;
+}
+
+#section3 .infoSection {
+    width: 100%;
+    position: relative;
+}
+
+#section3 .workerName {
+    margin-top: -80px;
+    margin-left: 10%;
+}
+
+#section3 .imgSection {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section3 #generalManager1 {
+    height: 370px;
+    aspect-ratio: 3/2;
+    background-image: url(img/generalManager1.jpg);
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    margin-right: 15%;
+    margin-top: -120px;
+}
+
+#section3 #generalManager2 {
+    height: 400px;
+    aspect-ratio: 3/2;
+    background-image: url(img/roomManager3.jpg);
+    position: absolute;
+    z-index: -1;
+    margin-left: 10%;
+    margin-top: 320px;
+}
+
+#section3 #generalManager3 {
+    height: 400px;
+    aspect-ratio: 5/3;
+    background-image: url(img/generalManager3.jpg);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: 480px;
+    margin-right: 8%;
+}
+
+#section3 .textSection {
+    background-color: var(--yellow);
+    width: 700px;
+    padding: 50px 100px;
+    margin: auto;
+    margin-top: 180px;
+}

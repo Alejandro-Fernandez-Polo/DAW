@@ -1,0 +1,249 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+    font-family: Poppins, sans-serif;
+
+}
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --titleGreen: #618064;
+    --titleGrey: #666666;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(Fotos/heroInsta.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 380px;
+    margin: 100px 0 0 12%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+}
+
+.heroContainer .name {
+    color: white;
+    font-size: 4.7vw;
+    text-align: center;
+}
+
+/******************************* SECTIONS **********************/
+
+.imgSection {
+    width: 45%;
+    height: 25vw;
+    min-width: 300px;
+    min-height: 180px;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titleSection {
+    margin-bottom: 20px;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    background-color: var(--sectionGrey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#section1 .infoSection {
+    flex: 3;
+    margin-right: 30px;
+    min-width: 300px;
+}
+
+#section1 .imgSection1 {
+    background-image: url(Fotos/Section1-Instalaciones.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: 2;
+    min-width: 300px;
+    height: 25vw;
+    min-height: 200px;
+}
+
+#section1 .titleSection {
+    color: var(--titleGreen);
+}
+
+#section1 a {
+    text-decoration: none;
+    /* quitamos el subrayado al ancla*/
+    color: #95B697;
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    background-color: var(--sectionGreen);
+}
+
+#section2 .textSection {
+    margin-bottom: 20px;
+}
+
+#section2 .first {
+    background-image: url(Fotos/Section2-Instalaciones.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+#section2 .second {
+    background-image: url(Fotos/Section2-Instalaciones2.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section2 .titleSection {
+    color: var(--titleGrey);
+}
+
+/******************************* SECTION 3 **********************/
+
+#section3 {
+    background-color: var(--sectionGrey);
+}
+
+#section3 .titleSection {
+    color: var(--titleGreen);
+}
+
+#section3 .textSection {
+    margin-bottom: 20px;
+}
+
+#section3 .first {
+    background-image: url(Fotos/Section3-Instalaciones.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+#section3 .second {
+    background-image: url(Fotos/Section3-Instalaciones2.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************* SECTION 4 **********************/
+
+#section4 {
+    background-color: var(--sectionGreen);
+}
+
+#section4 .textSection {
+    margin-bottom: 20px;
+}
+
+#section4 .first {
+    background-image: url(Fotos/Section4-Instalaciones.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+#section4 .second {
+    background-image: url(Fotos/Section4-Instalaciones2.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#section4 .titleSection {
+    color: var(--titleGrey);
+}
+
+/******************************* SECTION 5 **********************/
+
+#section5 {
+    background-color: var(--sectionGrey);
+}
+
+#section5 .titleSection {
+    color: var(--titleGreen);
+}
+
+#section5 .textSection {
+    margin-bottom: 20px;
+}
+
+#section5 .first {
+    background-image: url(Fotos/Section5-Instalaciones.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+#section5 .second {
+    background-image: url(Fotos/Section5-Instalaciones2.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************* SECTION 6 **********************/
+
+#section6 {
+    background-color: var(--sectionGreen);
+}
+
+#section6 .titleSection {
+    color: var(--titleGrey);
+}
+
+@media screen and (max-width: 500px) {
+    .infoSection {
+        width: 100%;
+    }
+
+    #section1 .imgSection1 {
+        max-width: 300px;
+        margin-right: auto;
+    }
+
+    .heroContainer .name {
+        font-size: 1.75em;
+    }
+}

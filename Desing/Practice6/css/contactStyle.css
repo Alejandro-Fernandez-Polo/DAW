@@ -1,0 +1,478 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --brownTitle: #643926;
+    --yellow: #eed65f;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    aspect-ratio: 15/6;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(../img/heroContact.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.heroContainer .ctaTitle {
+    width: 100%;
+    min-width: 180px;
+    height: 380px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(4.375rem, 1.6667rem + 9.0278vw, 12.5rem);
+    /*70 y 200*/
+    font-weight: 700;
+}
+
+.heroContainer .nameWhite {
+    color: white;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    width: 100%;
+    padding: 0 100px;
+}
+
+#section1 .titleSection {
+    width: 100%;
+    padding: 100px 0 50px;
+    margin-bottom: 0px;
+}
+
+#section1 .infoSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+#section1 .textSection {
+    width: 40%;
+    padding: 0 50px;
+    text-align: justify;
+}
+
+#section1 .donationSection {
+    width: 40%;
+    padding: 50px;
+    background-color: white;
+    z-index: 3;
+    position: relative;
+}
+
+#section1 .form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#section1 .formTitle {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#section1 .form input {
+    width: 45%;
+    height: 70px;
+    min-width: 170px;
+    margin-bottom: 50px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #E9E9E9;
+}
+
+#section1 .form .amountChecks {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 70px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#section1 .form .radioSection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#section1 .form .radioSectionOther {
+    justify-content: center;
+    height: 70px;
+    width: 45%;
+}
+
+#section1 .form .radio {
+    width: 20px;
+    height: 20px;
+    min-width: 0;
+    margin: 0;
+    margin: 0 10px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#section1 .form .radioInfo {
+    font-size: clamp(0.6875rem, 0.3958rem + 0.9722vw, 1.5625rem);
+    /*25 y 11*/
+}
+
+#section1 .form input::placeholder {
+    color: black;
+    font-family: 'League-Spartan', sans-serif;
+    font-size: clamp(1.0625rem, 0.7917rem + 0.9028vw, 1.875rem);/*30 y 17*/
+    padding-left: 10px;
+}
+
+
+#section1 .form .formButtom {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 100%;
+    margin: auto;
+    background-color: #517756;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.0625rem, 0.7917rem + 0.9028vw, 1.875rem);/*30 y 17*/
+    margin-bottom: 0px;
+    cursor: pointer;
+    height: 60px;
+    color: white;
+}
+
+#section1 .square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--blueTitle);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#section1 .rectangle {
+    position: absolute;
+    width: 30%;
+    height: 130%;
+    background-color: var(--blueTitle);
+    z-index: 0;
+    top: 50%;
+    right: -20%;
+    transform: translate(0, -50%);
+}
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    margin: 300px 20% 200px 25%;
+}
+
+#section2 .contactSection {
+    background-color: white;
+    padding: 100px 100px 100px 30%;
+    position: relative;
+}
+
+#section2 .infoSection {
+    background-color: var(--blueTitle);
+    padding: 50px;
+    color: white;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    transform: translate(35%, -50%);
+    left: -35%;
+}
+
+#section2 .infoSection .titleSection {
+    color: white;
+}
+
+#section2 .formButtom {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 100%;
+    margin: auto;
+    background-color: #517756;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.0625rem, 0.7917rem + 0.9028vw, 1.875rem);/*30 y 17*/
+    margin-bottom: 0px;
+    cursor: pointer;
+    height: 60px;
+    color: white;
+    margin-top: 50px;
+}
+
+#section2 .form__group {
+    width: 100%;
+}
+
+
+@media (max-width: 1100px) {
+    #section1 .donationSection {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    #section1 .titleSection {
+        width: 100%;
+        padding: 50px 0 30px;
+        margin-bottom: 0px;
+    }
+
+    #section1 .textSection {
+        width: 100%;
+        padding: 0;
+    }
+
+    #section1 .donationSection {
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    #section1 .rectangle {
+        position: absolute;
+        width: 30%;
+        height: 75%;
+        top: 100%;
+        right: -20%;
+        transform: translate(0, -94%);
+    }
+
+    #section2 {
+        margin: 150px 15% 100px 20%;
+    }
+
+    #section2 .contactSection {
+        padding: 50px 50px 50px 30%;
+    }
+
+    #section2 .infoSection {
+        padding: 30px;
+        color: white;
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        transform: translate(35%, -50%);
+        left: -25%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #section1 {
+        padding: 0 50px;
+    }
+
+    #section2 {
+        margin: 100px 10% 80px 15%;
+    }
+
+    #section2 .contactSection {
+        padding: 50px 50px 50px 30%;
+    }
+
+    #section2 .infoSection {
+        padding: 30px;
+        color: white;
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        transform: translate(35%, -50%);
+        left: -25%;
+    }
+}
+
+@media (max-width: 455px) {
+
+    #section1 {
+        padding: 0 20px;
+    }
+
+    #section1 .titleSection {
+        width: 100%;
+        padding: 30px 0 20px;
+        margin-bottom: 0px;
+    }
+
+    #section1 .square {
+        width: 30px;
+        height: 30px;
+    }
+
+    #section1 .textSection {
+        width: 100%;
+        padding: 0;
+    }
+
+    #section1 .donationSection {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #section1 .rectangle {
+        position: absolute;
+        width: 30%;
+        height: 75%;
+        top: 100%;
+        right: -20%;
+        transform: translate(0, -94%);
+    }
+
+    #section2 {
+        margin: 100px 10% 250px 15%;
+    }
+
+    #section2 .contactSection {
+        padding: 20px 20px 20px 20px;
+    }
+
+    #section2 .infoSection {
+        padding: 20px;
+        width: 75%;
+        top: 100%;
+        transform: translate(-50%, -5%);
+        left: 50%;
+        z-index: -10;
+    }
+
+    #section2 .titleSection{
+        margin-bottom: 30px;
+    }
+
+    #section2 .formButtom{
+        margin-top: 30px;
+    }
+
+
+    #section1 .form input {
+        width: 45%;
+        min-width: 0;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    #section1 .form .amountChecks {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 30px;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    #section1 .form .radioSectionOther {
+        justify-content: center;
+        height: 30px;
+        width: 45%;
+    }
+
+    #section1 .rectangle {
+        position: absolute;
+        width: 30%;
+        height: 72%;
+        top: 100%;
+        right: -20%;
+        transform: translate(0, -90%);
+    }
+}
+
+@media (max-width: 375px) {
+
+    #section1 .donationSection {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    #section1 .titleSection {
+        padding: 20px 0 10px;
+    }
+
+    #section1 .rectangle {
+        position: absolute;
+        width: 30%;
+        height: 63%;
+        top: 100%;
+        right: -20%;
+        transform: translate(0, -94%);
+    }
+
+    #section1 .form .formButtom,
+    #section2 .form .formButtom {
+        height: 40px;
+    }
+
+    #section2 {
+        margin: 60px 10% 220px 15%;
+    }
+}
+
+@media (max-width: 320px) {
+    #section1 .form .amountChecks {
+        flex-flow: row wrap;
+        height: 70px;
+    }
+
+    #section1 .form input::placeholder {
+        color: black;
+        font-family: 'League-Spartan', sans-serif;
+        font-size: clamp(1.25rem, 0.625rem + 2.0833vw, 3.125rem);/*50 y 20*/
+        padding-left: 3px;
+    }
+}

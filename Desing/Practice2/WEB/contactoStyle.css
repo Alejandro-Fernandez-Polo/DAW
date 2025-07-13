@@ -1,0 +1,405 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /*reset css*/
+    font-family: Poppins, sans-serif;
+
+}
+/***************************************** VARIABLES *****************************/
+
+:root {
+    --titleGreen: #618064;
+    --titleGrey: #666666;
+    --sectionGrey: #E9E3E3;
+    --sectionGreen: #B8CCB9;
+}
+
+/************************************************ HERO **************************/
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    /* 100% del tamaño del viewport */
+    margin: 0;
+    background-image: url(Fotos/heroContacto.jpg);
+    background-size: cover;
+    background-position: left left;
+    background-repeat: no-repeat;
+}
+
+.heroContainer .ctaTitle {
+    width: 30%;
+    min-width: 180px;
+    height: 380px;
+    margin: 100px 0 0 12%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+}
+
+.heroContainer .name {
+    color: white;
+    font-size: 4.7vw;
+    text-align: center;
+}
+
+/******************************* SECTIONS **********************/
+
+.imgSection {
+    width: 45%;
+    height: 530px;
+    min-width: 300px;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titleSection {
+    margin-bottom: 20px;
+}
+
+/******************************* SECTION 1 **********************/
+
+#section1 {
+    background-color: var(--sectionGrey);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#section1 .titleSection {
+    color: var(--titleGreen);
+    width: 100%;
+}
+
+.form {
+    width: 45%;
+    min-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.formTitle {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form input {
+    width: 45%;
+    height: 40px;
+    min-width: 170px;
+    margin-bottom: 25px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100%;
+    margin-bottom: 25px;
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 1.4em;
+    padding-left: 10px;
+}
+
+.form textarea::placeholder {
+    padding-top: 7px;
+}
+
+.form .formButtom {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    width: 35%;
+    min-width: 160px;
+    margin-left: auto;
+    background-color: #618064;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.info {
+    width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-width: 350px;
+}
+
+.divInfo {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.info .imgInfo {
+    margin-right: 20px;
+    min-height: 45px;
+    min-width: 45px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scheduleInfo {
+    margin-top: 30px;
+}
+
+.scheduleInfo .imgInfo {
+    background-image: url(Fotos/calendarioLogo.png);
+}
+
+.phoneInfo .imgInfo {
+    background-image: url(Fotos/telefLogo.png);
+}
+
+.whatsInfo .imgInfo {
+    background-image: url(Fotos/whatsLogo.png);
+}
+
+.emailInfo .imgInfo {
+    background-image: url(Fotos/emailLogo.png);
+}
+
+.info .text {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+a[href^="tel:"]{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.info p {
+    margin: 0;
+    width: 100%;
+}
+
+.info .title {
+    font-weight: 600;
+}
+
+.location {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 50px;
+
+}
+
+.loctInfo .imgInfo {
+    background-image: url(Fotos/loctLogo.png);
+    margin-right: 20px;
+    min-height: 55px;
+    min-width: 45px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.loctInfo .title {
+    font-weight: 600;
+}
+
+.loctInfo p {
+    margin: 0;
+    width: 100%;
+}
+
+
+/******************************* SECTION 2 **********************/
+
+#section2 {
+    background-color: var(--sectionGreen);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#section2 .titleSection {
+    width: 100%;
+}
+
+.ticket #centrado {
+    text-align: center;
+}
+
+.ticket .titleEntrada {
+    color: black;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.ticket {
+    background-color: var(--sectionGrey);
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.ticket .textEntrada {
+    width: 95%;
+    max-width: 450px;
+}
+
+.ticket .fechaInput {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.ticket input {
+    /* Resetear css */
+    border: none;
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    margin-top: 20px;
+    width: 25%;
+    height: 40px;
+    min-width: 80px;
+    margin-bottom: 25px;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.ticket input::placeholder {
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.ticket .cta {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ticket .button {
+    background-color: var(--sectionGreen);
+    width: 17vw;
+    min-width: 170px;
+    height: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.75em;
+}
+
+.ticket .imgEntrada {
+    background-image: url(Fotos/ticket.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 100px;
+    min-height: 70px;
+}
+
+.ticket .imgEntrada2 {
+    background-image: url(Fotos/menu.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 100px;
+    min-height: 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .form input {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin: auto;
+    }
+
+    .location {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .heroContainer {
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ticket .cta {
+        height: 70px;
+    }
+
+    .ticket .imgEntrada {
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .ticket .imgEntrada2 {
+        min-width: 0;
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ticket {
+        width: 100%;
+    }
+
+    .heroContainer .name {
+        font-size: 1.75em;
+    }
+}
