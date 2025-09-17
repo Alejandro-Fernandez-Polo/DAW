@@ -1,28 +1,90 @@
-# 🔍 Codigo-Desconocido
+# Codigo Desconocido
 
-## Tareas asignadas.-
+## Overview
+Codigo Desconocido is a multi-component escape room management platform. It includes a web-based admin panel, backend services, chat server, and Dockerized infrastructure for scalable deployment. The project is designed for educational and entertainment purposes, allowing users to book, manage, and interact with escape rooms.
 
-Tatiana: Docker y MiniJuego.
+## Features
+- **Frontend (pi-admin):** Modern React-based admin dashboard for managing rooms, bookings, clients, and more.
+- **Backend (Flask):** RESTful API for business logic, client management, and data persistence.
+- **Chat Server:** Real-time communication for users and admins (Node.js).
+- **Dockerized Infrastructure:** Easy setup for development and production using Docker Compose.
+- **Database Support:** MongoDB and MySQL integration for flexible data storage.
 
-Migue: Redis y la bdd.
+## Technologies Used
+- React (Frontend)
+- Flask (Backend API)
+- Node.js (Chat Server)
+- MongoDB & MySQL (Databases)
+- Docker & Docker Compose
 
-Alejandro: Flask.
+## Folder Structure
 
-Juan Carlos: Vistas del frontend de cara al cliente.
+```
+Codigo-Desconocido/
+├── backend/           # Flask backend API
+├── docker/            # Docker configs, compose, and service folders
+│   ├── flask/         # Flask Docker setup
+│   ├── node/          # Node.js chat server Docker setup
+│   ├── phpmyadmin/    # phpMyAdmin Docker setup
+│   ├── mongo-volume/  # MongoDB data volume
+├── frontend/
+│   └── pi-admin/      # React admin dashboard
+├── Server-Chat/       # Node.js chat server
+├── README.md          # Project documentation
+└── ...                # Other scripts and files
+```
 
-Samuel: Vistas del frontend (backend).
-  
-# Cosas a tener en cuenta
+## Setup & Installation
 
-Para iniciar el proyecto ejecutar el start1.bat y luego start.bat con el docker desktop iniciado la segunda vez simplemnte ejecutar los docker
+### Prerequisites
+- Docker & Docker Compose
+- Node.js & npm (for local frontend/server development)
+- Python 3.x (for local backend development)
 
-y meterse en  http://localhost:3000/
+### Quick Start (Recommended)
+1. Clone the repository:
+	 ```sh
+	 git clone <repo-url>
+	 cd Codigo-Desconocido
+	 ```
+2. Copy or edit environment variables in `docker/.env` as needed.
+3. Start all services with Docker Compose:
+	 ```sh
+	 cd docker
+	 docker-compose up --build
+	 ```
+4. Access the frontend at [http://localhost:3000](http://localhost:3000)
+5. Backend API runs at [http://localhost:5000](http://localhost:5000)
+6. Chat server runs at [http://localhost:4000](http://localhost:4000)
 
-Para entrar en el back teneis que poner la ruta admin despues del http://localhost:3000/admin
+### Manual Development
+- **Frontend:**
+	```sh
+	cd frontend/pi-admin
+	npm install
+	npm start
+	```
+- **Backend:**
+	```sh
+	cd docker/flask
+	pip install -r requirements.txt
+	python app.py
+	```
+- **Chat Server:**
+	```sh
+	cd docker/node
+	npm install
+	node server.js
+	```
 
-si algo falla ejecutar Por_si_falla.bat 
+## Usage
+- Book and manage escape rooms via the admin dashboard.
+- Real-time chat for support and collaboration.
+- Manage clients, bookings, and rooms from the backend.
 
-Ahora mismo esta puesto para que podais acceder al admin sin ser administradores para que podais verlo
-
-para el resto de paginas escaperooms etc hay que iniciar sesión, para ello hacer click en el icono de usuario que hay arriba a la derecha
-
+## Authors
+- Alejandro Fernandez
+- Tatiana Fuentes 
+- Miguel Angel Rufino
+- Juan Carlos Carballo
+- Samuel Sanchez
