@@ -1,4 +1,4 @@
-# Desing Folder
+# Design Folder
 
 This folder contains various web development practice projects for coursework. Each subfolder represents a different assignment or practice, showcasing HTML, CSS, JavaScript, and asset management skills. Below is an overview of the contents:
 
